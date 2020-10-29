@@ -1,0 +1,84 @@
+.blog{
+    background-color: white;
+    display: inline-block;
+    width: 30%;
+    border-radius: 20px;
+    text-align: center;
+    padding: 30px;
+    margin:5px 36px 20px 5px;
+    cursor: pointer;
+    color: black;
+    position: relative;
+    z-index: 2;
+}
+.blog__wrapper > p {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    padding: 10px;
+    padding-top: 0px;
+    border-bottom: 1px solid black;
+    border-width: 20%;
+
+}
+.blog__text{
+    font-size: 1.2rem;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+    
+}
+.blog__function{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 4px;
+}
+.blog__share{
+    display: flex;
+    font-size: 1.2rem;
+}
+.blog__more{
+    position: absolute;
+    top: 35%;
+    left: 38%;
+    color: white;
+}
+.more__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.4rem;
+    z-index: -1;
+    background-color: black;
+    border-radius: 50%;
+    padding: 20px;
+    opacity: 0;
+}
+.more__btn:hover{
+    animation: btnappear 1s linear both ;
+}
+@keyframes btnappear {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.more__arrow{
+    animation: updown 500ms ease-in-out both infinite;
+}
+@keyframes updown {
+    from {
+        transform: translateY(0px);
+    }to{
+        transform: translateY(5px);
+    }
+
+}
+.blog__chips{
+    margin-bottom: 20px;
+}
+.blog__chip{
+    margin-right: 5px;
+    margin-bottom: 5px;
+}

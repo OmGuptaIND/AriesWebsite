@@ -1,0 +1,12 @@
+.login__modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login__data{
+    background-color: #ffffff;
+    border: 2px solid #000;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.19);
+    padding: 4px 5px;
+
+}

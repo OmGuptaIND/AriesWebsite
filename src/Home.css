@@ -1,0 +1,217 @@
+.home{
+    /* text-align: center; */
+    margin: 0;
+    padding: 0;
+
+}
+.home__hero{
+    width: 100%;
+    margin: 0px auto;
+    background-color:#03040B;
+    padding: 0;
+
+}
+.home__gif{
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+    /* mask-image: linear-gradient(to bottom,rgba(0,0,0,1),rgba(0,0,0,0)); */
+    /* position: absolute; */
+    z-index: -1;
+    animation: mask_image 5s ease-in-out both;
+}
+@keyframes mask_image{
+    0% {
+        mask-image: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0));
+    }
+    10%{
+        mask-image: linear-gradient(to bottom,rgba(0,0,0,0.1),rgba(0,0,0,0));
+
+    }
+    20%{
+        mask-image: linear-gradient(to bottom,rgba(0,0,0,0.2),rgba(0,0,0,0));
+
+    }
+    30%{
+        mask-image: linear-gradient(to bottom,rgba(0,0,0,0.3),rgba(0,0,0,0));
+    }
+    40%{
+        mask-image: linear-gradient(to bottom,rgba(0,0,0,0.4),rgba(0,0,0,0));
+    }50%{
+        mask-image: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0));
+    }60%{
+        mask-image: linear-gradient(to bottom,rgba(0,0,0,0.6),rgba(0,0,0,0));
+
+    }70%{
+        mask-image: linear-gradient(to bottom,rgba(0,0,0,0.7),rgba(0,0,0,0));
+
+    }80%{
+        mask-image: linear-gradient(to bottom,rgba(0,0,0,0.8),rgba(0,0,0,0));
+
+    }90%{
+        mask-image: linear-gradient(to bottom,rgba(0,0,0,0.9),rgba(0,0,0,0));
+
+    }
+    100%{
+        mask-image: linear-gradient(to bottom,rgba(0,0,0,1),rgba(0,0,0,0));
+    }
+}
+.hero__data{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.hero__heading{
+    color: white;
+    z-index: 1;
+    background: inherit;
+    width: 60%;
+    position: absolute;
+    left:20%;
+    top:32%;
+    font-size: 8rem;
+    cursor: pointer;
+    font-family: 'Patrick Hand', cursive;
+}
+.hero__heading{
+    animation:example 3s  ease-in;
+}
+
+@keyframes example{
+    from {opacity: 0;
+        }
+    to{opacity: 1;
+        }
+}
+.hero__margin{
+    border-top: 1px solid white;
+    width: 40%;
+    color: white;
+    position: absolute;
+    top:55%;
+    margin: auto;
+    left: 30%;
+    animation: drivemargin 2.7s ease-in-out both ;
+}
+
+@keyframes drivemargin{
+    from {width: 0%;}
+    to {width:40%}
+}
+.hero__btns{
+    position: absolute;
+    top: 60%;
+    left:42%;
+}
+
+.hero__login__btn{
+    background-color: #ff7e67 !important;
+    font-size: 1.2rem !important;
+    padding: 10px !important;
+    color: white !important;
+    animation: addbtn 4s ease-in-out both 0.7s;
+
+}
+.hero__register__btn{
+    margin-left: 25px !important;
+    background-color: #056676 !important;
+    font-size: 1.2rem !important;
+    padding: 10px !important;
+    color: white !important;
+    animation: addbtn 4s ease-in-out both 0.9s;
+}
+@keyframes addbtn{
+    from {opacity: 0;}
+    to{opacity: 1;}
+}
+
+.hero__social{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 1%;
+    color: white;
+    top: 70%;
+}
+.home__social__options{
+    margin-bottom: 20px;
+}
+.facebook{
+    animation: socialdrivein 3s ease both 1s;
+}
+.instagram{
+    animation: socialdrivein 3s ease both 1.2s;
+}
+.twitter{
+    animation: socialdrivein 3s ease both 1.4s;
+}
+.github{
+    animation: socialdrivein 3s ease both 1.6s;
+}
+
+@keyframes socialdrivein{
+    0% {margin-left: -49px;}
+    50% {margin-left: 21px;}
+    100% {left: 20px;}
+}
+.home__avatar{
+    width: 5rem !important;
+    height: 5rem !important;
+    /* padding: 4rem; */
+}
+.hero__middle_text{
+    padding: 20px;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+.home__middle{
+    background-color: #222831;
+    position: relative;
+    margin-top:-20px ;
+    color: #eeeeee;
+    width: 100%;
+    
+}
+.edit__btn{
+    cursor: pointer;
+}
+.hero__edit{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.hero__username__text{
+    display: flex;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.hero__middle__username{
+    display: flex;
+    font-family: 'Stylish', sans-serif;
+    margin-left: 20px;
+    font-size: 2.4rem;
+    padding-bottom: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.home__middle__gif{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    z-index: -1;
+    animation: mask_image 3s ease-in-out both;
+}
+.hero__middle_text{
+    position: absolute;
+    top: 0;
+}
+.home__blogs{
+    text-align: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.blog__head{
+    margin-top: 40px;
+}

@@ -1,0 +1,34 @@
+.register__modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.register__data{
+    background-color: #ffffff;
+    border: 2px solid #000;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.19);
+    padding: 4px 5px;
+}
+.register__data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    width: 40%;
+}
+.register__field {
+    margin-bottom: 30px;
+    width: 98%;
+}
+.register__logo{
+    object-fit: contain;
+    width: 15%;
+    margin-bottom: 30px;
+}
+.register__btn{
+    font-size: 1.1rem !important;
+}
