@@ -9,10 +9,19 @@
     position: absolute;
     color: white;
     z-index: 100;
+    animation:example 600ms  ease-in;
 }
+
 .header__logo{
     object-fit: contain;
+    animation:example 600ms  ease-in;
+
     
+}
+.header__menu__burger{
+    color:white;
+    border: none !important;
+    font-size: 1.6rem !important;
 }
 .header__image{
     object-fit: contain;
@@ -20,6 +29,8 @@
     height:130%;
     margin-left: 5%;
     margin-top: 7px;
+    animation:example 600ms  ease-in;
+
 }
 .header__options{
     display: flex;
@@ -53,6 +64,12 @@
     margin-left: 50px;
     margin-top: 20px;
     cursor: pointer;
+}
+@keyframes example{
+    from {opacity: 0;
+        }
+    to{opacity: 1;
+        }
 }
 
 

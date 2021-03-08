@@ -1,4 +1,4 @@
- const post =[
+ const post_data =[
     {
         title:"Title 1",
         text:"lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ", 
@@ -41,4 +41,4 @@
     }
 ]
 
-export default post;
+export default post_data;

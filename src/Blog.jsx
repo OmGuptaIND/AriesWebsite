@@ -14,21 +14,27 @@ export default function Blog({title,text,likes,views,badge}) {
                 <p>{title}</p>
                 <div className="blog__text">
                     {text}
+                    <span>......</span>
                 </div>
                 <div className="blog__chips">
-                    {badge.map(data => (
+                    {badge?.map(data => (
                         <Chip className="blog__chip" color="primary" label={data} />
                     ))}
                 </div>
                 <div className="blog__function">
-                    <span className="blog__share"><ShareIcon /></span>
+                    <Tooltip title="Share" arrow>
+                        <span className="blog__share"><ShareIcon /></span>
+                    </Tooltip>
+                   
                     <Tooltip title={views} arrow>
                         <span className="blog__share"><VisibilityIcon /></span>
                     </Tooltip>
                     <Tooltip title={likes} arrow>
                         <span className="blog__share"><FavoriteBorderIcon /></span>
                     </Tooltip> 
-                    <span className="blog__bookmark"><BookmarkBorderIcon /></span>
+                    <Tooltip title="BookMark" arrow>
+                        <span className="blog__bookmark"><BookmarkBorderIcon /></span>
+                    </Tooltip>
                 </div>
                 <div className="blog__more">
                     <p className="more__btn" >View<ExpandMoreIcon className="more__arrow" /></p>

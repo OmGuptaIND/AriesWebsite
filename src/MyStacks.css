@@ -1,0 +1,55 @@
+.stacks{
+    margin-top:100px;
+}
+.stacks__title{
+    margin-top: 40px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    font-size: 3rem;
+    font-family: 'Patrick Hand', cursive;
+}
+.stacks__head__hr{
+    margin: 2px 0px 30px 17px;
+    width: 3%;
+}
+.stacks__wrapper{
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+}
+.stack__image{
+    width: 10%;
+    margin: auto;
+    object-fit:contain;
+    background-color: white;
+    margin-right: 10px;
+    padding: 1px;
+    border-radius: 50%;
+    
+}
+.up{
+    animation: img_up 1.2s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+}
+.down{
+    animation: img_down 1.2s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes img_up {
+    from {transform: translateY(-20px);}
+    to {transform: translateY(40px);}
+}
+@keyframes img_down {
+    from {transform: translateY(40px);}
+    to {transform: translateY(-20px);}
+}
+.stack__text{
+    width:60%;
+    text-align:center;
+    margin:auto;
+    margin-bottom:80px;
+    font-size:1.05rem;
+    line-height:1.9;
+    font-family: 'Space Mono', monospace;
+    margin-top:5%;
+}

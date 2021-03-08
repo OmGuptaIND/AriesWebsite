@@ -1,0 +1,54 @@
+.sidebar{
+    width:100%;
+    text-align: center;
+    
+}
+.MuiDrawer-paper{
+    width: 20% !important;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90,92,106,1) 0%, rgba(32,45,58,1) 81.3% );;
+    text-align: center;
+    color: white !important;
+    font-size: 1.2rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+.data__bookmark{
+    display: flex;
+    justify-content: space-between;
+}
+.data__logo{
+    width: 44% !important;
+    height: 30% !important;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-left: 30%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.data__username{
+    margin-top: 10px;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+hr{
+    width: 80%;
+    margin: 10px auto;
+    margin-bottom: 20px;
+}
+.data__actions{
+    padding-left: 70px;
+    padding-right: 50px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.data__space{
+    margin-bottom: 10%;
+}
+.sidbar__options{
+    text-decoration:none !important;
+    color: white;
+    
+}

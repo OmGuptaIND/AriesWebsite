@@ -25,20 +25,20 @@
         mask-image: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0));
     }
     10%{
-        mask-image: linear-gradient(to bottom,rgba(0,0,0,0.1),rgba(0,0,0,0));
+        mask-image: linear-gradient(to bottom,rgba(0,0,0,0.03),rgba(0,0,0,0));
 
     }
     20%{
-        mask-image: linear-gradient(to bottom,rgba(0,0,0,0.2),rgba(0,0,0,0));
+        mask-image: linear-gradient(to bottom,rgba(0,0,0,0.05),rgba(0,0,0,0));
 
     }
     30%{
-        mask-image: linear-gradient(to bottom,rgba(0,0,0,0.3),rgba(0,0,0,0));
+        mask-image: linear-gradient(to bottom,rgba(0,0,0,0.08),rgba(0,0,0,0));
     }
     40%{
-        mask-image: linear-gradient(to bottom,rgba(0,0,0,0.4),rgba(0,0,0,0));
+        mask-image: linear-gradient(to bottom,rgba(0,0,0,0.12),rgba(0,0,0,0));
     }50%{
-        mask-image: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0));
+        mask-image: linear-gradient(to bottom,rgba(0,0,0,0.4),rgba(0,0,0,0));
     }60%{
         mask-image: linear-gradient(to bottom,rgba(0,0,0,0.6),rgba(0,0,0,0));
 
@@ -148,6 +148,10 @@
 .github{
     animation: socialdrivein 3s ease both 1.6s;
 }
+.youtube{
+    animation: socialdrivein 3s ease both 1.8s;
+
+}
 
 @keyframes socialdrivein{
     0% {margin-left: -49px;}
@@ -164,6 +168,13 @@
     padding-left: 30px;
     margin-bottom: 20px;
 }
+
+.login__upload{
+    display:none;
+    color:blue !important;
+    margin-bottom: 20px;
+}
+
 .home__middle{
     background-color: #222831;
     position: relative;
@@ -197,7 +208,7 @@
 .home__middle__gif{
     width: 100%;
     object-fit: cover;
-    height: 100%;
+    height: 1000vh;
     z-index: -1;
     animation: mask_image 3s ease-in-out both;
 }
@@ -211,7 +222,38 @@
     padding: 0;
     margin: 0;
 }
-
 .blog__head{
+    margin-top: 40px;
+    margin-left: 15px;
+    margin-bottom: 2px;
+    font-size: 3rem;
+    font-family: 'Patrick Hand', cursive;
+}
+.bolg__head__hr{
+    margin: 0px 0px 30px 17px;
+    width: 3%;
+}
+.update__btn{
+    margin-top: -5px !important;
+    padding-top: -20px;
+}
+.edit__load{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    padding: 0;
+}
+.blog__bottom{
+    margin-top: 3%;
+    height: 1px;
+    background-color: red;
+    /* border: none; */
+}
+
+.home__bottom{
+    background-color:inherit;
+    position: relative;
+    color: #eeeeee;
+    width: 100%;
     margin-top: 40px;
 }

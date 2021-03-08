@@ -1,0 +1,81 @@
+.post{
+    background-color: #222831;
+    position: absolute;
+    /* margin-top:-20px ; */
+    color: #eeeeee;
+    width: 100%;
+    /* height: 600px; */
+    height: 400vh;
+}
+.image__post{
+    width: 100%;
+    object-fit: cover;
+    background-color: blue;
+    mask-image: linear-gradient(to bottom,rgba(0,0,0,1),rgba(0,0,0,0));
+    height: 100vh;
+
+}
+.post__data{
+    position: absolute;
+    text-align: center;
+    top:10%;
+    width: 100%;
+    margin: auto;
+    height: 200vh !important;
+
+}
+.post__heading{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    font-size: 1.1rem;
+    font-family: 'Patrick Hand', cursive;
+
+}
+.post__editor{
+    color: black !important;
+    width: 80%;
+    margin: auto;
+    min-height: 60vh !important;
+  
+}
+s
+.post__previous{
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+hr{
+    margin-top: 40px;
+    width:55%
+}
+.post__previous__head{
+    margin-bottom: 20px;
+}
+.post__btn{
+    margin-top: 30px !important;
+}
+.post__badge{
+    color: white !important;
+}
+.post__drop{
+    color: white !important;
+  
+}
+.post__form{
+    padding-left: -1px !important;
+    min-width: 120px !important;
+    max-width: 300px !important;
+    color:white;
+}
+.post__chip{
+    display: flex;
+    flex-wrap: wrap;
+    color:white;
+    margin:3px !important;
+    
+}
