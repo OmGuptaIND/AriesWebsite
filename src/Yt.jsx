@@ -6,14 +6,12 @@ import { Button } from '@material-ui/core';
 export default function Yt() {
     const [data,setData]=useState([]);
     const [more , setMore]=useState(false)  
-    const KEY= "AIzaSyDMPnTUz-NkwVkVWBMj06B90_hHFLrOJsQ";
     useEffect(() => {
         async function fetchData() {
         await Axios.get('https://www.googleapis.com/youtube/v3/playlistItems' , {
         params:{
             part:'snippet',
-            playlistId:"PLB4dyKeSZEApH3BYXaMJf6XpGDMwFpxyE",
-            key: KEY, 
+            playlistId:"PLB4dyKeSZEApH3BYXaMJf6XpGDMwFpxyE", 
             maxResults:50
         }
         }).then(data => {
